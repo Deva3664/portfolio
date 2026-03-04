@@ -1,0 +1,28 @@
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <span class="footer-logo">Devansh.deb</span>
+      <p class="footer-tagline">Building the web, one component at a time.</p>
+    </div>
+
+    <div class="footer-links">
+      <p class="footer-heading">Navigation</p>
+      @for (link of links; track link.label) {
+        <a [routerLink]="link.path">{{ link.label }}</a>
+      }
+    </div>
+
+    <div class="footer-socials">
+      <p class="footer-heading">Find Me On</p>
+      @for (social of socials; track social.label) {
+        <a [href]="social.url" target="_blank">{{ social.label }}</a>
+      }
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© {{ currentYear }} Devansh. Built with Angular 💚</p>
+  </div>
+</footer>

@@ -1,0 +1,131 @@
+.about {
+  padding: 5rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.section-header h2 span {
+  color: #00ff9c;
+}
+
+.section-header p {
+  color: #666666;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 250px;
+  height: 250px;
+  border: 2px solid #00ff9c44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #00ff9c;
+  font-weight: 800;
+  background: #111111;
+  position: relative;
+}
+
+.image-placeholder::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 8px;
+  bottom: 8px;
+  border: 1px solid #00ff9c22;
+  z-index: -1;
+}
+
+.about-title {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.about-title span {
+  color: #00ff9c;
+}
+
+.about-bio {
+  color: #777777;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.stack-label {
+  color: #aaaaaa;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+}
+
+.stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stack-tag {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #00ff9c44;
+  color: #00ff9c;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: #111111;
+  border: 1px solid #1a1a1a;
+  padding: 2rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: #00ff9c44;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #00ff9c;
+}
+
+.stat-label {
+  color: #666666;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,92 @@
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 800;
+  color: #00ff9c;
+  font-family: 'Courier New', monospace;
+  line-height: 1;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 30px #00ff9c55;
+  animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+  0%, 95%, 100% { opacity: 1; }
+  96%, 99% { opacity: 0.6; }
+}
+
+.title {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.message {
+  color: #666666;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: 1px solid #00ff9c;
+  color: #00ff9c;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  margin-bottom: 3rem;
+}
+
+.home-btn:hover {
+  background: #00ff9c;
+  color: #0d0d0d;
+}
+
+.terminal {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  padding: 1.5rem;
+  text-align: left;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.terminal p {
+  margin-bottom: 0.5rem;
+  color: #555555;
+}
+
+.prompt {
+  color: #00ff9c;
+  margin-right: 0.5rem;
+}
+
+.output {
+  color: #777777;
+  padding-left: 1rem;
+}
+
+.cursor {
+  animation: blink 0.7s infinite;
+  color: #00ff9c;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

@@ -1,0 +1,22 @@
+<section class="projects">
+  <div class="section-header">
+    <h2>My <span>Projects</span></h2>
+    <p>Things I've built</p>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card" *ngFor="let project of projects">
+      <div class="card-top">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+      </div>
+      <div class="card-tech">
+        <span class="tag" *ngFor="let tech of project.tech">{{ tech }}</span>
+      </div>
+      <div class="card-links">
+        <a [href]="project.github" target="_blank">GitHub →</a>
+        <a [href]="project.live" target="_blank">Live →</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,140 @@
+.resume {
+  padding: 5rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.section-header h2 span {
+  color: #00ff9c;
+}
+
+.section-header p {
+  color: #666666;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.download-btn {
+  padding: 0.7rem 1.8rem;
+  border: 1px solid #00ff9c;
+  color: #00ff9c;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #00ff9c;
+  color: #0d0d0d;
+}
+
+.tab-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.tab-switcher button {
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  border: 1px solid #333333;
+  color: #777777;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.tab-switcher button:hover {
+  border-color: #00ff9c44;
+  color: #ffffff;
+}
+
+.tab-switcher button.active {
+  border-color: #00ff9c;
+  color: #00ff9c;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 110px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #1a1a1a;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 100px 20px 1fr;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.5rem 0;
+}
+
+.timeline-year {
+  color: #00ff9c;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-align: right;
+  padding-top: 0.2rem;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  background: #00ff9c;
+  border-radius: 50%;
+  margin-top: 0.3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-content h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.place {
+  color: #00ff9c;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  color: #777777;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

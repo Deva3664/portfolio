@@ -1,0 +1,31 @@
+<section class="skills">
+  <div class="section-header">
+    <h2>My <span>Skills</span></h2>
+    <p>What I work with</p>
+  </div>
+
+  <div class="category-tabs">
+    @for (category of categories; track category.name) {
+      <button
+        class="tab-btn"
+        [class.active]="activeCategory === category.name"
+        (click)="setCategory(category.name)">
+        {{ category.name }}
+      </button>
+    }
+  </div>
+
+  <div class="skills-list">
+    @for (skill of getActiveSkills(); track skill.name) {
+      <div class="skill-item">
+        <div class="skill-info">
+          <span class="skill-name">{{ skill.name }}</span>
+          <span class="skill-percent">{{ skill.level }}%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" [style.width.%]="skill.level"></div>
+        </div>
+      </div>
+    }
+  </div>
+</section>
