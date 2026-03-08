@@ -18,6 +18,7 @@ export class Skills {
         { name: 'CSS', level: 85 },
         { name: 'JavaScript', level: 80 },
         { name: 'Angular', level: 70 },
+        {name: 'React', level: 70 },
       ]
     },
     {
@@ -32,8 +33,9 @@ export class Skills {
       name: 'Tools',
       skills: [
         { name: 'Git', level: 80 },
+        { name: 'Github', level: 60 },
         { name: 'VS Code', level: 90 },
-        { name: 'Figma', level: 60 },
+        { name: 'Supabase', level: 60 },
       ]
     }
   ];

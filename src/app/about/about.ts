@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 export class About {
   stats = [
     { value: '2+', label: 'Years Coding' },
-    { value: '10+', label: 'Projects Built' },
+    { value: '5+', label: 'Projects Built' },
     { value: '5+', label: 'Technologies' },
     { value: '3+', label: 'Happy Clients' }
   ];

@@ -4,69 +4,66 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: radial-gradient(ellipse at top, #0d1f1a 0%, #0d0d0d 70%);
+  background: var(--bg);
 }
-
 .hero-content {
   text-align: center;
   max-width: 700px;
 }
-
 .greeting {
   font-size: 1rem;
-  color: #00ff9c;
+  color: var(--accent);
   letter-spacing: 3px;
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
-
 .hero-name {
   font-size: 3.5rem;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--text);
   margin-bottom: 1rem;
 }
-
 .hero-name span {
-  color: #00ff9c;
+  color: var(--accent);
 }
-
 .hero-role {
   font-size: 1.5rem;
-  color: #aaaaaa;
+  color: var(--text-muted);
   margin-bottom: 1.5rem;
   min-height: 2rem;
 }
-
 .cursor {
   animation: blink 0.7s infinite;
-  color: #00ff9c;
+  color: var(--accent);
 }
-
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
-
 .hero-desc {
-  color: #666666;
+  color: var(--text-muted);
   font-size: 1rem;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
-
 .cta-btn {
   display: inline-block;
   padding: 0.8rem 2rem;
-  border: 1px solid #00ff9c;
-  color: #00ff9c;
+  border: 1px solid var(--accent);
+  color: var(--accent);
   text-decoration: none;
   font-family: 'Courier New', monospace;
   letter-spacing: 2px;
   transition: all 0.3s ease;
 }
-
 .cta-btn:hover {
-  background-color: #00ff9c;
-  color: #0d0d0d;
+  background-color: var(--accent);
+  color: var(--bg);
+}
+@media (max-width: 768px) {
+  .hero { padding: 1rem; }
+  .hero-content { width: 100%; text-align: center; padding: 0 1rem; }
+  .hero-name { font-size: 2rem; }
+  .hero-role { font-size: 1rem; }
+  .greeting { font-size: 0.8rem; }
 }

@@ -20,16 +20,16 @@ export class Resume {
 
   timeline: TimelineItem[] = [
     {
-      year: '2022 - Present',
+      year: '2023 - 2027',
       title: 'B.Tech Computer Science',
-      place: 'Your University Name',
-      description: 'Studying core CS concepts, web development, data structures and algorithms.',
+      place: 'ABDUL KALAM TECHNICAL UNIVERSITY',
+      description: 'Studying core CSE concepts, web development, data structures and algorithms.',
       type: 'education'
     },
     {
       year: '2020 - 2022',
       title: 'Higher Secondary (12th)',
-      place: 'Your School Name',
+      place: 'INTERNATIONAL HINDU SCHOOL',
       description: 'Completed with focus on Physics, Chemistry and Mathematics.',
       type: 'education'
     },
